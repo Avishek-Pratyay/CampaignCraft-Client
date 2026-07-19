@@ -102,10 +102,13 @@ campaigncraft-ai/
 ```bash
 Frontend:
 git clone https://github.com/Avishek-Pratyay/CampaignCraft-Client.git
-cd campaigncraft-ai
-```
+cd CampaignCraft-Client
+
 Backend:
 git clone https://github.com/Avishek-Pratyay/CampaignCraft-Server.git
+cd CampaignCraft-Server
+```
+
 
 
 
