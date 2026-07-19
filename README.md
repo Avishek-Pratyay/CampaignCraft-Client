@@ -100,9 +100,14 @@ campaigncraft-ai/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/campaigncraft-ai.git
+Frontend:
+git clone https://github.com/Avishek-Pratyay/CampaignCraft-Client.git
 cd campaigncraft-ai
 ```
+Backend:
+git clone https://github.com/Avishek-Pratyay/CampaignCraft-Server.git
+
+
 
 ### 2. Install all dependencies
 
