@@ -66,15 +66,17 @@
 ## 📁 Project Structure
 
 ```
-campaigncraft-ai/
+campaigncraft/
 ├── frontend/                  # React + Vite client
-│   └── src/
-│       ├── components/        # Navbar, Footer, CampaignCard, DataVisualizer, etc.
-│       ├── config/            # Firebase configuration
-│       ├── context/           # AuthContext (global auth state)
-│       └── pages/             # Landing, Explore, Login, Register, AddCampaign,
-│                              # ManageCampaigns, ContentGenerator, DataAnalyzer,
-│                              # CampaignDetails, About, Contact
+   └── src/
+        ├── components/        # Navbar, Footer, CampaignCard, DataVisualizer, etc.
+        ├── config/            # Firebase configuration
+        ├── context/           # AuthContext (global auth state)
+        └── pages/             # Landing, Explore, Login, Register, AddCampaign,
+                               # ManageCampaigns, ContentGenerator, DataAnalyzer,
+                               # CampaignDetails, About, Contact
+
+campaigncraft/
 ├── backend/                   # Node.js + Express API
 │   └── src/
 │       ├── config/            # MongoDB connection
@@ -82,7 +84,6 @@ campaigncraft-ai/
 │       ├── models/            # User, Campaign, BrandProfile (Mongoose schemas)
 │       └── routes/            # auth, campaign, brand, ai (REST endpoints)
 ├── package.json               # Root scripts (concurrent dev, install, build)
-└── README.md
 ```
 
 ---
@@ -115,7 +116,10 @@ cd CampaignCraft-Server
 ### 2. Install all dependencies
 
 ```bash
-npm run install:all
+Frontend:npm install
+         
+Backend:npm install
+        
 ```
 
 ### 3. Configure environment variables
@@ -144,7 +148,8 @@ VITE_FIREBASE_APP_ID=your_app_id
 ### 4. Run the development server
 
 ```bash
-npm run dev
+Frontend:npm run dev
+Backend:npm run dev
 ```
 
 This starts both the backend (port `5000`) and frontend (port `5173`) concurrently.
@@ -152,7 +157,7 @@ This starts both the backend (port `5000`) and frontend (port `5173`) concurrent
 ### 5. Build for production
 
 ```bash
-npm run build:all
+npm run build
 ```
 
 ---
